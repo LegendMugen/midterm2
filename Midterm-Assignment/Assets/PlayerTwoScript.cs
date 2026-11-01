@@ -1,5 +1,11 @@
+using System.Net.NetworkInformation;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 
 
@@ -27,6 +33,7 @@ public class PlayerTwoScript : MonoBehaviour
         {
             moveY -= 5;
         }
+
         
     }
 }

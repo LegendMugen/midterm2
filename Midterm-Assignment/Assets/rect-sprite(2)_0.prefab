@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5772296122401413477}
   - component: {fileID: 2118903622277234197}
+  - component: {fileID: 3632244825243835543}
   m_Layer: 0
   m_Name: rect-sprite(2)_0
   m_TagString: Untagged
@@ -92,3 +93,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &3632244825243835543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7800070461776231491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0123c94022e0d74dbc2908dd77cfa34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'

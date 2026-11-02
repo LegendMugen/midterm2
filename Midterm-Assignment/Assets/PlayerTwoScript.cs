@@ -1,11 +1,11 @@
-using System.Net.NetworkInformation;
+//using System.Net.NetworkInformation;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using UnityEngine.SceneManagement;
+//using System;
+//using System.Collections;
+//using System.Collections.Generic;
+//using TMPro;
+//using UnityEngine.SceneManagement;
 
 
 
@@ -23,19 +23,32 @@ public class PlayerTwoScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        //if(Input.GetKey(KeyCode.UpArrow))
+        //{
+
+
+        //}
         //gives player two a variable
         float moveY = transform.position.y;
+        float moveSpeed = 6;
 
-        if(Keyboard.current.upArrowKey.wasPressedThisFrame)
+        if (Keyboard.current.upArrowKey.isPressed)
         {
-            moveY += 5;
+            transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
+
         }
 
-        if(Keyboard.current.downArrowKey.wasPressedThisFrame)
+        if (Keyboard.current.downArrowKey.isPressed)
         {
-            moveY -= 5;
-        }
+            transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
 
-        
+        }
+        //if(Keyboard.current.downArrowKey.wasPressedThisFrame)
+        //{
+        //    moveY -= 5;
+        //}
+
+
     }
 }

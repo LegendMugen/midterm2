@@ -18,7 +18,7 @@ public class ballControlScript : MonoBehaviour
     {
         int ballMoveX = 5;
         int ballMoveY = 5;
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        if (Keyboard.current.spaceKey.isPressed)
         {
             transform.Translate(Vector2.right *ballMoveX * Time.deltaTime);
             transform.Translate(Vector2.up *ballMoveY* Time.deltaTime);

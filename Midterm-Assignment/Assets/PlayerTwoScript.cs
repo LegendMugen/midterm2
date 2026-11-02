@@ -44,11 +44,7 @@ public class PlayerTwoScript : MonoBehaviour
             transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
 
         }
-        //if(Keyboard.current.downArrowKey.wasPressedThisFrame)
-        //{
-        //    moveY -= 5;
-        //}
-
+        
 
     }
 }

@@ -17,10 +17,11 @@ public class ballControlScript : MonoBehaviour
     void Update()
     {
         int ballMoveX = 5;
-        //int ballMoveY = 5;
-        if(Keyboard.current.spaceKey.wasPressedThisFrame)
+        int ballMoveY = 5;
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
-            Transform.Translate(Vector2.right *ballMoveX * Time.deltaTime);
+            transform.Translate(Vector2.right *ballMoveX * Time.deltaTime);
+            transform.Translate(Vector2.up *ballMoveY* Time.deltaTime);
         }
         
     }

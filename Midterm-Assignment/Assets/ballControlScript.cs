@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -16,13 +17,22 @@ public class ballControlScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int ballMoveX = 5;
-        int ballMoveY = 5;
-        if (Keyboard.current.spaceKey.isPressed)
+        //int ballMoveX = 5;
+
+        //int ballMoveY = 5;
+        Boolean constantMovement = false;
+
+        if(Keyboard.current.spaceKey.isPressed)
         {
-            transform.Translate(Vector2.right *ballMoveX * Time.deltaTime);
-            transform.Translate(Vector2.up *ballMoveY* Time.deltaTime);
+            constantMovement = !constantMovement;
         }
+
+        if(constantMovement)
+        {
+            transform.Translate(Vector2.right *  Time.deltaTime);
+        }
+
+       
         
     }
 }

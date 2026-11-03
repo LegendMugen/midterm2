@@ -1113,9 +1113,25 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 02cc2862f12d0084fa01bbd589463a4e, type: 2}
+    - target: {fileID: -8478739217195298617, guid: cf31e2f5561788d4cb9ec8f15ad289d4, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8478739217195298617, guid: cf31e2f5561788d4cb9ec8f15ad289d4, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8478739217195298617, guid: cf31e2f5561788d4cb9ec8f15ad289d4, type: 3}
+      propertyPath: m_SleepingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3702658515602431913, guid: cf31e2f5561788d4cb9ec8f15ad289d4, type: 3}
       propertyPath: m_Name
       value: ball-sprite_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7884360694327547719, guid: cf31e2f5561788d4cb9ec8f15ad289d4, type: 3}
+      propertyPath: m_Radius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7884360694327547719, guid: cf31e2f5561788d4cb9ec8f15ad289d4, type: 3}
       propertyPath: m_Material

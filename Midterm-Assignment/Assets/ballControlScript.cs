@@ -1,18 +1,33 @@
-using System;
+//using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+//using System.Collections;
+//using System.Collections.Generic;
+
 
 public class ballControlScript : MonoBehaviour
 {
+    float speed = 3;
+    Vector2 startPos;
 
     public Rigidbody2D RB;
 
     public SpriteRenderer SR;
+
+    //public float speed;
+    
+    //public float startingSpeed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        startPos = transform.position;
         RB = GetComponent<Rigidbody2D>();
+        launch();
+
+        //RB = GetComponent<Rigidbody2D>();
+
+        //RB = GetComponent<Rigidbody2D>();
+
         //bool isRight = UnityEngine.Random.value > 0.5;
         //float xVelocity = -1f;
 
@@ -28,22 +43,25 @@ public class ballControlScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void launch()
     {
+        int x = Random.Range(0, 2);
+        int y = Random.Range(0, 2);
 
-
-        bool isRight = UnityEngine.Random.value > 0.5;
-        float xVelocity = -1f;
-
-        if (isRight == true)
+        if( x == 0)
         {
-            xVelocity = 1f;
+            x = -1;
         }
 
-        float yVelocity = UnityEngine.Random.Range(-1, 1);
+        if(y == 0)
+        {
+            y = -1;
+        }
 
+        RB.linearVelocity = new Vector2(x * speed, y * speed);
+    }
 
-        RB.linearVelocity = new Vector2(xVelocity, yVelocity);
+   
 
 
 
@@ -70,4 +88,4 @@ public class ballControlScript : MonoBehaviour
 
 
     }
-}
+

@@ -8,7 +8,7 @@ using UnityEngine.InputSystem;
 public class ballControlScript : MonoBehaviour
 {
     float speed = 5;
-    Vector2 startPos;
+    public Vector2 startPos;
 
     public Rigidbody2D RB;
 

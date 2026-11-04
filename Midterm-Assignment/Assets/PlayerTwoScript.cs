@@ -33,11 +33,14 @@ public class PlayerTwoScript : MonoBehaviour
         float moveY = transform.position.y;
         float moveSpeed = 6;
 
+        // Allows the player to move up
         if (Keyboard.current.upArrowKey.isPressed)
         {
             transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
 
         }
+
+        // Allows the player to move down
 
         if (Keyboard.current.downArrowKey.isPressed)
         {

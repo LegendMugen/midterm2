@@ -43,6 +43,8 @@ public class ballControlScript : MonoBehaviour
     }
 
     // Update is called once per frame
+
+    //takes the value that is genereated and times that by a predetermined speed value.
     public void launch()
     {
         int x = Random.Range(0, 2);

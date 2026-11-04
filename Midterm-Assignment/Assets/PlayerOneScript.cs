@@ -18,11 +18,17 @@ public class PlayerOneScript : MonoBehaviour
         float yPosition = transform.position.y;
         float yTravelSpeed = 6;
 
+
+        // Allows the player to move up
+
         if (Keyboard.current.wKey.isPressed)
         {
             transform.Translate(Vector2.up * yTravelSpeed * Time.deltaTime);
 
         }
+
+        // Allows the player to move down
+
 
         if (Keyboard.current.sKey.isPressed)
         {
